@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="358dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtprin"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/txtResl"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:textAlignment="textEnd"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="354dp"
+        android:layout_height="490dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:rowCount="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/Clean"
+            style="@style/botonStyle"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+
+            android:text="C"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/Divide"
+            style="@style/botonStyle"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/Multiplica"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="X"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/Borrar"
+
+            style="@style/botonStyle"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+
+            android:text="Borrar"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/Siete"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="7"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Ocho"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="8"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Nueve"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="9"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Resta"
+            style="@style/botonStyle"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+
+            android:text="-"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/Cuatro"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="4"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Cinco"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="5"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Seis"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="6"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Suma"
+            style="@style/botonStyle"
+            android:layout_width="78dp"
+            android:layout_margin="2dp"
+
+            android:text="+"
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/Uno"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="1"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Dos"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="2"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Tres"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="3"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Igual"
+            style="@style/botonStyle"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:layout_margin="2dp"
+
+            android:text="="
+            android:textColor="#FF5722" />
+
+        <Button
+            android:id="@+id/Cero"
+            style="@style/botonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_columnSpan="2"
+
+            android:layout_gravity="fill"
+            android:layout_margin="2dp"
+            android:text="0"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/Punto"
+            style="@style/botonStyle"
+            android:layout_margin="2dp"
+
+            android:text="."
+            android:textColor="#FAFAFA" />
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
