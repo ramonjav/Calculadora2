@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Suma:
                 resul += Double.parseDouble(mostrar);
                 Resultado.setText(String.valueOf(resul));
-                mostrar = "0";
+                mostrar = "";
                 prin.setText(mostrar);
                 sim = "+";
                 break;
